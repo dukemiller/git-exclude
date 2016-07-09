@@ -1,0 +1,26 @@
+#!/bin/bash
+
+git rev-parse --is-inside-work-tree &>/dev/null
+
+if [ $? != 0 ]; then
+  echo "Not a git repository."
+  exit 1
+fi
+
+if [ -z $1 ]; then
+  echo "No argument provided."
+  exit 1
+fi
+
+excludePath="$(pwd)/.git/info"
+
+if [ ! -d $excludePath ]; then
+  echo "'$excludePath' doesn't exist (this can only happen with malformed git repositories)"
+  exit 1
+fi
+
+# add to path
+echo $1 >> $excludePath/exclude
+
+echo "Added '$1' to the git exclude."
+exit 0
