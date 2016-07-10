@@ -1,7 +1,7 @@
 {
   "name": "git-exclude",
   "version": "1.0.1",
-  "description": "Type `git exclude --arguments` in the git repository directory to append arguments to the exclude file.",
+  "description": "A simple command-line tool to append a path to the git repository info/exclude file.",
   "repository": {
     "type": "git",
     "url": "https://github.com/dukemiller/git-exclude"
@@ -13,7 +13,7 @@
   "bin": {
     "git-exclude": "git-exclude"
   },
-  "author": "Duke Miller",
+  "author": "Duke Miller <dukemiller928@hotmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/dukemiller/git-exclude"
 }
