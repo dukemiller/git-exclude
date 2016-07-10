@@ -1,6 +1,6 @@
 {
   "name": "git-exclude",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Type `git exclude --arguments` in the git repository directory to append arguments to the exclude file.",
   "repository": {
     "type": "git",
