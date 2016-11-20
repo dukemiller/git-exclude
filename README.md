@@ -1,5 +1,5 @@
 # Git Exclude  
-A simple command-line tool to append a path to the git repository info/exclude file.
+A command line tool to append a path to the git repository info/exclude file.
 
 ## Installation  
 ```npm install --global git-exclude```  

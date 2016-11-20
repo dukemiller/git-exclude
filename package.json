@@ -1,7 +1,7 @@
 {
   "name": "git-exclude",
   "version": "1.0.1",
-  "description": "A simple command-line tool to append a path to the git repository info/exclude file.",
+  "description": "A command line tool to append a path to the git repository info/exclude file.",
   "repository": {
     "type": "git",
     "url": "https://github.com/dukemiller/git-exclude"
