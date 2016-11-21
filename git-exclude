@@ -14,13 +14,13 @@ fi
 
 excludePath="$(pwd)/.git/info"
 
-if [ ! -d $excludePath ]; then
+if ! [[ -d $excludePath ]]; then
   echo "'$excludePath' doesn't exist (this can only happen with malformed git repositories)"
   exit 1
 fi
 
 # add to path
-echo $1 >> $excludePath/exclude
+echo $1 >> "$excludePath"/exclude
 
 echo "Added '$1' to the git exclude."
 exit 0
